@@ -137,6 +137,9 @@ public static class RegistryScanner
                 ? IconLoader.IsInWindowsDir(exe)
                 : iconSpec == null || IconLoader.IsInWindowsDir(IconLoader.ParseIconSpec(iconSpec).path);
             if (markCritical && CriticalVerbs.Contains(name)) isSystem = true;
+            // Свои пункты никогда не прячем как системные, даже если они запускают cmd/PowerShell из папки Windows.
+            bool isCustom = name.StartsWith(CustomItems.Prefix, StringComparison.OrdinalIgnoreCase);
+            if (isCustom) isSystem = false;
 
             // Битый: путь к программе указан полностью, но файла нет.
             bool isBroken = exeExpanded != null && Path.IsPathRooted(exeExpanded) && !File.Exists(exeExpanded);
@@ -155,7 +158,7 @@ public static class RegistryScanner
                 TargetPath = exeExpanded,
                 IsExtended = verb.GetValue("Extended") != null,
                 IsSystem = isSystem,
-                IsCustom = name.StartsWith(CustomItems.Prefix, StringComparison.OrdinalIgnoreCase),
+                IsCustom = isCustom,
                 IsBroken = isBroken,
                 Icon = IconLoader.Load(iconSpec) ?? IconLoader.Load(exe),
                 OriginalEnabled = verb.GetValue("LegacyDisable") == null,
