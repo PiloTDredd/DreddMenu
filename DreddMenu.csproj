@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>DreddMenu</AssemblyName>
+    <RootNamespace>DreddMenu</RootNamespace>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Assets\app.ico</ApplicationIcon>
+    <Product>Dredd Menu</Product>
+    <AssemblyTitle>Dredd Menu</AssemblyTitle>
+    <Description>Windows context menu tuner</Description>
+    <Company>PiloTDredd</Company>
+    <Authors>PiloTDredd</Authors>
+    <Copyright>© 2026 PiloTDredd</Copyright>
+    <Version>1.0.0</Version>
+    <SatelliteResourceLanguages>en;ru</SatelliteResourceLanguages>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="WPF-UI" Version="3.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\app.ico" />
+    <Resource Include="Assets\app.png" />
+    <None Remove="tools\**" />
+  </ItemGroup>
+
+</Project>

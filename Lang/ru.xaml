@@ -1,0 +1,223 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <sys:String x:Key="App.Subtitle">Настрой правый клик под себя</sys:String>
+
+    <!-- Навигация -->
+    <sys:String x:Key="Nav.desktop">Рабочий стол</sys:String>
+    <sys:String x:Key="Nav.files">Файлы</sys:String>
+    <sys:String x:Key="Nav.folders">Папки</sys:String>
+    <sys:String x:Key="Nav.drives">Диски</sys:String>
+    <sys:String x:Key="Nav.filetypes">Типы файлов</sys:String>
+    <sys:String x:Key="Nav.win11">Windows 11</sys:String>
+    <sys:String x:Key="Nav.backups">Бэкапы</sys:String>
+    <sys:String x:Key="Nav.settings">Настройки</sys:String>
+
+    <sys:String x:Key="Page.desktop.Desc">Меню по правому клику на пустом месте рабочего стола или папки</sys:String>
+    <sys:String x:Key="Page.files.Desc">Меню по правому клику на любом файле</sys:String>
+    <sys:String x:Key="Page.folders.Desc">Меню по правому клику на папке</sys:String>
+    <sys:String x:Key="Page.drives.Desc">Меню по правому клику на диске</sys:String>
+    <sys:String x:Key="Page.filetypes.Desc">Пункты, которые появляются только у файлов определённого типа</sys:String>
+    <sys:String x:Key="Page.win11.Desc">Новое меню Windows 11 и пункты, которые добавляют приложения из Microsoft Store</sys:String>
+
+    <!-- Места -->
+    <sys:String x:Key="Loc.DesktopBg">Рабочий стол</sys:String>
+    <sys:String x:Key="Loc.FolderBg">Фон папки</sys:String>
+    <sys:String x:Key="Loc.AllFiles">Все файлы</sys:String>
+    <sys:String x:Key="Loc.FilesFolders">Файлы и папки</sys:String>
+    <sys:String x:Key="Loc.Folder">Папка</sys:String>
+    <sys:String x:Key="Loc.FolderShell">Папка (оболочка)</sys:String>
+    <sys:String x:Key="Loc.Drive">Диск</sys:String>
+
+    <!-- Карточки -->
+    <sys:String x:Key="Kind.Verb">Команда</sys:String>
+    <sys:String x:Key="Kind.Handler">Расширение</sys:String>
+    <sys:String x:Key="Kind.App">Приложение</sys:String>
+    <sys:String x:Key="Details.Submenu">Вложенное меню</sys:String>
+    <sys:String x:Key="Badge.Mine">Мой</sys:String>
+    <sys:String x:Key="Badge.System">Системный</sys:String>
+    <sys:String x:Key="Badge.Broken">Битый</sys:String>
+    <sys:String x:Key="Badge.Changed">Изменено</sys:String>
+    <sys:String x:Key="Tip.Shift">Пункт виден только при Shift + правый клик</sys:String>
+    <sys:String x:Key="Tip.System">Пункт самой Windows — выключай, только если точно знаешь, что это</sys:String>
+    <sys:String x:Key="Tip.Broken">Программа этого пункта не найдена — скорее всего, её удалили, а пункт остался</sys:String>
+    <sys:String x:Key="Tip.DeleteItem">Удалить мой пункт</sys:String>
+    <sys:String x:Key="Tip.DeleteBackup">Удалить бэкап</sys:String>
+    <sys:String x:Key="Tip.RestartExplorer">Перезапустить проводник</sys:String>
+    <sys:String x:Key="Tip.Refresh">Обновить список</sys:String>
+    <sys:String x:Key="Toggle.On">Вкл</sys:String>
+    <sys:String x:Key="Toggle.Off">Выкл</sys:String>
+
+    <sys:String x:Key="Admin.Yes">Права администратора есть</sys:String>
+    <sys:String x:Key="Admin.No">Режим просмотра: без прав администратора изменения не сохранятся</sys:String>
+
+    <!-- Windows 11 и типы файлов -->
+    <sys:String x:Key="Win11.Classic.Title">Классическое меню (как в Windows 10)</sys:String>
+    <sys:String x:Key="Win11.Classic.Desc">Сразу полное меню со всеми пунктами, без «Показать дополнительные параметры». Применяется после перезапуска проводника.</sys:String>
+    <sys:String x:Key="FileTypes.Placeholder">Расширение, например .png</sys:String>
+    <sys:String x:Key="FileTypes.Show">Показать</sys:String>
+    <sys:String x:Key="FileTypes.Hint">Выбери тип файла сверху или впиши своё расширение</sys:String>
+
+    <!-- Панель инструментов -->
+    <sys:String x:Key="Search.Placeholder">Поиск по названию или команде…</sys:String>
+    <sys:String x:Key="ShowSystem">Показать системные</sys:String>
+    <sys:String x:Key="Btn.Add">Добавить пункт</sys:String>
+    <sys:String x:Key="Btn.Presets">Наборы</sys:String>
+    <sys:String x:Key="Btn.Apply">Применить</sys:String>
+    <sys:String x:Key="Btn.Cancel">Отменить</sys:String>
+    <sys:String x:Key="Btn.Export">Экспорт</sys:String>
+    <sys:String x:Key="Btn.Import">Импорт</sys:String>
+    <sys:String x:Key="Btn.RunCheck">Проверить</sys:String>
+    <sys:String x:Key="Btn.Continue">Продолжить</sys:String>
+
+    <sys:String x:Key="Preset.Clean">Чистое меню — выключить всё лишнее</sys:String>
+    <sys:String x:Key="Preset.Dev">Для разработчика — Git, редакторы, терминалы</sys:String>
+    <sys:String x:Key="Preset.AllOn">Включить всё обратно</sys:String>
+    <sys:String x:Key="Preset.FixBroken">Выключить битые пункты</sys:String>
+    <sys:String x:Key="Preset.Done">Отмечено изменений: {0}. Проверь и нажми «Применить».</sys:String>
+    <sys:String x:Key="Preset.Nothing">Менять нечего — всё уже так.</sys:String>
+
+    <sys:String x:Key="Empty.Nothing">Тут ничего не нашлось</sys:String>
+    <sys:String x:Key="Empty.Win11">Приложения из Microsoft Store не добавили своих пунктов в меню</sys:String>
+    <sys:String x:Key="Pending.Text">Несохранённых изменений: {0}</sys:String>
+
+    <!-- Предпросмотр -->
+    <sys:String x:Key="Preview.Title">Предпросмотр</sys:String>
+    <sys:String x:Key="Preview.Note">Примерно так будет выглядеть меню</sys:String>
+    <sys:String x:Key="Preview.View">Вид</sys:String>
+    <sys:String x:Key="Preview.Sort">Сортировка</sys:String>
+    <sys:String x:Key="Preview.Refresh">Обновить</sys:String>
+    <sys:String x:Key="Preview.Paste">Вставить</sys:String>
+    <sys:String x:Key="Preview.Open">Открыть</sys:String>
+    <sys:String x:Key="Preview.Cut">Вырезать</sys:String>
+    <sys:String x:Key="Preview.Copy">Копировать</sys:String>
+    <sys:String x:Key="Preview.Delete">Удалить</sys:String>
+    <sys:String x:Key="Preview.Rename">Переименовать</sys:String>
+    <sys:String x:Key="Preview.Properties">Свойства</sys:String>
+
+    <!-- Бэкапы -->
+    <sys:String x:Key="Backups.Desc">Перед каждым «Применить» сохраняется, как было. Любое изменение можно откатить.</sys:String>
+    <sys:String x:Key="Backups.OpenFolder">Открыть папку</sys:String>
+    <sys:String x:Key="Backups.Empty">Пока бэкапов нет — они появятся после первого «Применить»</sys:String>
+    <sys:String x:Key="Backups.Restore">Откатить</sys:String>
+    <sys:String x:Key="Backup.WasOn">был вкл</sys:String>
+    <sys:String x:Key="Backup.WasOff">был выкл</sys:String>
+    <sys:String x:Key="Backup.More">и ещё {0}</sys:String>
+
+    <!-- Настройки -->
+    <sys:String x:Key="Settings.Appearance">Внешний вид</sys:String>
+    <sys:String x:Key="Settings.Language">Язык</sys:String>
+    <sys:String x:Key="Settings.Language.Desc">Язык интерфейса программы</sys:String>
+    <sys:String x:Key="Settings.Theme">Тема</sys:String>
+    <sys:String x:Key="Settings.Theme.Desc">Светлая, тёмная или как в Windows</sys:String>
+    <sys:String x:Key="Theme.System">Как в системе</sys:String>
+    <sys:String x:Key="Theme.Dark">Тёмная</sys:String>
+    <sys:String x:Key="Theme.Light">Светлая</sys:String>
+    <sys:String x:Key="Settings.Preview">Предпросмотр меню</sys:String>
+    <sys:String x:Key="Settings.Preview.Desc">Показывать справа, как будет выглядеть правый клик</sys:String>
+    <sys:String x:Key="Settings.Tools">Инструменты</sys:String>
+    <sys:String x:Key="Settings.Profile">Профиль настроек</sys:String>
+    <sys:String x:Key="Settings.Profile.Desc">Сохрани настройки меню в файл и перенеси на другой компьютер</sys:String>
+    <sys:String x:Key="Settings.Check">Проверка системы</sys:String>
+    <sys:String x:Key="Settings.Check.Desc">Проверить права, доступ к реестру, бэкапы и найти битые пункты меню</sys:String>
+
+    <sys:String x:Key="About.Title">О программе</sys:String>
+    <sys:String x:Key="About.Desc">Настройка контекстного меню Windows: включай и выключай пункты, добавляй свои, откатывай изменения одной кнопкой.</sys:String>
+    <sys:String x:Key="About.Donate">Поддержать</sys:String>
+    <sys:String x:Key="About.Donate.Desc">Программа бесплатная. Если она тебе помогла — можно закинуть на развитие ❤</sys:String>
+
+    <!-- Проверка системы -->
+    <sys:String x:Key="Check.Title">Проверка системы</sys:String>
+    <sys:String x:Key="Check.Summary.Ok">Всё в порядке, можно работать</sys:String>
+    <sys:String x:Key="Check.Summary.Warnings">Работать можно, но есть замечания: {0}</sys:String>
+    <sys:String x:Key="Check.Summary.Errors">Найдены проблемы: {0}, замечания: {1}</sys:String>
+    <sys:String x:Key="Check.Os">Версия Windows</sys:String>
+    <sys:String x:Key="Check.Os.Win11">Windows 11 (сборка {0}) — поддерживается полностью</sys:String>
+    <sys:String x:Key="Check.Os.Win10">Windows 10 (сборка {0}) — поддерживается, раздел «Windows 11» не нужен</sys:String>
+    <sys:String x:Key="Check.Os.Old">Старая сборка {0} — часть функций может не работать</sys:String>
+    <sys:String x:Key="Check.Admin">Права администратора</sys:String>
+    <sys:String x:Key="Check.Admin.Ok">Есть — можно менять любые пункты</sys:String>
+    <sys:String x:Key="Check.Admin.No">Нет — изменения системных веток не сохранятся. Перезапусти и нажми «Да» в окне UAC</sys:String>
+    <sys:String x:Key="Check.RegRead">Чтение реестра</sys:String>
+    <sys:String x:Key="Check.RegRead.Ok">Доступ есть</sys:String>
+    <sys:String x:Key="Check.RegRead.Fail">Нет доступа к веткам контекстного меню</sys:String>
+    <sys:String x:Key="Check.RegWrite">Запись в реестр</sys:String>
+    <sys:String x:Key="Check.RegWrite.Ok">Доступ есть (пользователь и система)</sys:String>
+    <sys:String x:Key="Check.RegWrite.UserOnly">Только для пользователя — системные пункты менять не получится</sys:String>
+    <sys:String x:Key="Check.RegWrite.Fail">Нет доступа на запись</sys:String>
+    <sys:String x:Key="Check.Data">Папка программы</sys:String>
+    <sys:String x:Key="Check.Data.Fail">Не получается записать в {0} — бэкапы и настройки не сохранятся</sys:String>
+    <sys:String x:Key="Check.Backups">Бэкапы</sys:String>
+    <sys:String x:Key="Check.Backups.Ok">Все файлы целы (всего: {0})</sys:String>
+    <sys:String x:Key="Check.Backups.Broken">Повреждённых файлов: {0} — они будут пропущены</sys:String>
+    <sys:String x:Key="Check.Explorer">Проводник</sys:String>
+    <sys:String x:Key="Check.Explorer.Ok">Запущен</sys:String>
+    <sys:String x:Key="Check.Explorer.No">Не запущен — изменения будут видны после его запуска</sys:String>
+    <sys:String x:Key="Check.Broken">Битые пункты меню</sys:String>
+    <sys:String x:Key="Check.Broken.Ok">Не найдены</sys:String>
+    <sys:String x:Key="Check.Broken.Found">Найдено: {0} ({1}). Их можно выключить через «Наборы» → «Выключить битые пункты»</sys:String>
+
+    <!-- Уведомления -->
+    <sys:String x:Key="T.Done">Готово</sys:String>
+    <sys:String x:Key="T.Error">Ошибка</sys:String>
+    <sys:String x:Key="T.ReadFail">Не удалось прочитать реестр.</sys:String>
+    <sys:String x:Key="T.Applied">Применено изменений: {0}. Проверь правый клик!</sys:String>
+    <sys:String x:Key="T.AppliedRestart">Применено изменений: {0}. Для расширений перезапусти проводник.</sys:String>
+    <sys:String x:Key="T.NoAccess">Нет доступа</sys:String>
+    <sys:String x:Key="T.NoAccessMsg">Нужны права администратора. Перезапусти программу и нажми «Да» в окне UAC.</sys:String>
+    <sys:String x:Key="T.ExplorerRestarted">Проводник перезапущен</sys:String>
+    <sys:String x:Key="T.ExplorerRestartedMsg">Изменения меню должны быть видны.</sys:String>
+    <sys:String x:Key="T.ClassicOn">Классическое меню включено</sys:String>
+    <sys:String x:Key="T.ClassicOff">Меню Windows 11 возвращено</sys:String>
+    <sys:String x:Key="T.ClassicMsg">Перезапусти проводник (кнопка со стрелками справа сверху), чтобы увидеть результат.</sys:String>
+    <sys:String x:Key="T.Restored">Откатил</sys:String>
+    <sys:String x:Key="T.RestoredMsg">Пункты возвращены как было. Для расширений перезапусти проводник.</sys:String>
+    <sys:String x:Key="T.Exported">Профиль сохранён: {0}</sys:String>
+    <sys:String x:Key="T.Imported">Профиль загружен, изменений: {0}. Нажми «Применить».</sys:String>
+    <sys:String x:Key="T.ImportFail">Не получилось прочитать профиль.</sys:String>
+    <sys:String x:Key="T.ItemAdded">Пункт добавлен</sys:String>
+    <sys:String x:Key="T.ItemAddedMsg">«{0}» уже в меню — проверь правый клик.</sys:String>
+    <sys:String x:Key="T.ItemDeleted">Пункт «{0}» удалён.</sys:String>
+
+    <!-- Диалоги -->
+    <sys:String x:Key="D.UnsavedExit">Есть несохранённые изменения. Применить их перед выходом?</sys:String>
+    <sys:String x:Key="D.UnsavedRefresh">Несохранённые изменения пропадут. Обновить список?</sys:String>
+    <sys:String x:Key="D.RestoreQ">Вернуть состояние пунктов на {0}?&#10;&#10;{1}</sys:String>
+    <sys:String x:Key="D.RestoreTitle">Откат</sys:String>
+    <sys:String x:Key="D.DeleteBackupQ">Удалить бэкап от {0}? Откатить его потом будет нельзя.</sys:String>
+    <sys:String x:Key="D.DeleteBackupTitle">Удаление бэкапа</sys:String>
+    <sys:String x:Key="D.DeleteItemQ">Удалить пункт «{0}» из меню?</sys:String>
+    <sys:String x:Key="D.DeleteItemTitle">Удаление пункта</sys:String>
+    <sys:String x:Key="Profile.Filter">Профиль Dredd Menu (*.json)|*.json</sys:String>
+
+    <!-- Новый пункт -->
+    <sys:String x:Key="Add.Title">Новый пункт меню</sys:String>
+    <sys:String x:Key="Add.Desc">Добавь в правый клик свою команду: открыть папку в редакторе, терминале или любой программе.</sys:String>
+    <sys:String x:Key="Add.Template">Шаблон</sys:String>
+    <sys:String x:Key="Add.Template.None">Свой вариант</sys:String>
+    <sys:String x:Key="Add.Name">Название в меню</sys:String>
+    <sys:String x:Key="Add.Name.Placeholder">Например: Открыть в VS Code</sys:String>
+    <sys:String x:Key="Add.Program">Программа</sys:String>
+    <sys:String x:Key="Add.Browse">Обзор</sys:String>
+    <sys:String x:Key="Add.Browse.Filter">Программы (*.exe;*.bat;*.cmd)|*.exe;*.bat;*.cmd|Все файлы (*.*)|*.*</sys:String>
+    <sys:String x:Key="Add.OpenIn">Открыть в {0}</sys:String>
+    <sys:String x:Key="Add.Args">Параметры запуска</sys:String>
+    <sys:String x:Key="Add.Args.Hint">Вместо {path} подставится путь к файлу или папке, по которой кликнули</sys:String>
+    <sys:String x:Key="Add.Where">Где показывать</sys:String>
+    <sys:String x:Key="Add.Where.Background">Рабочий стол и фон папки</sys:String>
+    <sys:String x:Key="Add.Where.Folders">Папки</sys:String>
+    <sys:String x:Key="Add.Where.Files">Файлы</sys:String>
+    <sys:String x:Key="Add.Where.Drives">Диски</sys:String>
+    <sys:String x:Key="Add.ShiftOnly">Показывать только при Shift + правый клик</sys:String>
+    <sys:String x:Key="Add.Create">Создать</sys:String>
+    <sys:String x:Key="Add.Err.Name">Впиши название пункта</sys:String>
+    <sys:String x:Key="Add.Err.Program">Программа не найдена — выбери файл через «Обзор»</sys:String>
+    <sys:String x:Key="Add.Err.Where">Отметь хотя бы одно место, где показывать пункт</sys:String>
+
+    <sys:String x:Key="Tpl.Terminal">Открыть в Терминале</sys:String>
+    <sys:String x:Key="Tpl.VSCode">Открыть в VS Code</sys:String>
+    <sys:String x:Key="Tpl.Cmd">Командная строка здесь</sys:String>
+    <sys:String x:Key="Tpl.PowerShell">PowerShell здесь</sys:String>
+    <sys:String x:Key="Tpl.Notepad">Открыть в Блокноте</sys:String>
+</ResourceDictionary>

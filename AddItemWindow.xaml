@@ -1,0 +1,64 @@
+<ui:FluentWindow
+    x:Class="DreddMenu.AddItemWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+    Title="{DynamicResource Add.Title}"
+    Width="560" SizeToContent="Height" ResizeMode="NoResize"
+    WindowStartupLocation="CenterOwner"
+    ShowInTaskbar="False"
+    ExtendsContentIntoTitleBar="True"
+    WindowBackdropType="Mica"
+    WindowCornerPreference="Round">
+    <StackPanel>
+        <ui:TitleBar Title="{DynamicResource Add.Title}" ShowMaximize="False" ShowMinimize="False" />
+
+        <StackPanel Margin="24,4,24,22">
+            <TextBlock FontSize="22" FontWeight="SemiBold" Text="{DynamicResource Add.Title}"
+                       Foreground="{DynamicResource TextFillColorPrimaryBrush}" />
+            <TextBlock Margin="0,4,0,16" FontSize="12" TextWrapping="Wrap" Text="{DynamicResource Add.Desc}"
+                       Foreground="{DynamicResource TextFillColorSecondaryBrush}" />
+
+            <TextBlock Margin="0,0,0,6" FontSize="13" Text="{DynamicResource Add.Template}" Foreground="{DynamicResource TextFillColorPrimaryBrush}" />
+            <ComboBox x:Name="TemplateCombo" SelectionChanged="TemplateCombo_SelectionChanged" DisplayMemberPath="Title" />
+
+            <TextBlock Margin="0,14,0,6" FontSize="13" Text="{DynamicResource Add.Name}" Foreground="{DynamicResource TextFillColorPrimaryBrush}" />
+            <ui:TextBox x:Name="NameBox" PlaceholderText="{DynamicResource Add.Name.Placeholder}" />
+
+            <TextBlock Margin="0,14,0,6" FontSize="13" Text="{DynamicResource Add.Program}" Foreground="{DynamicResource TextFillColorPrimaryBrush}" />
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <ui:TextBox x:Name="ExeBox" PlaceholderText="C:\Program Files\...\program.exe" />
+                <ui:Button Grid.Column="1" Margin="8,0,0,0" Content="{DynamicResource Add.Browse}" Click="Browse_Click">
+                    <ui:Button.Icon>
+                        <ui:SymbolIcon Symbol="FolderOpen24" />
+                    </ui:Button.Icon>
+                </ui:Button>
+            </Grid>
+
+            <TextBlock Margin="0,14,0,6" FontSize="13" Text="{DynamicResource Add.Args}" Foreground="{DynamicResource TextFillColorPrimaryBrush}" />
+            <ui:TextBox x:Name="ArgsBox" Text="&quot;{path}&quot;" />
+            <TextBlock Margin="2,4,0,0" FontSize="11" Text="{DynamicResource Add.Args.Hint}"
+                       Foreground="{DynamicResource TextFillColorTertiaryBrush}" />
+
+            <TextBlock Margin="0,14,0,6" FontSize="13" Text="{DynamicResource Add.Where}" Foreground="{DynamicResource TextFillColorPrimaryBrush}" />
+            <WrapPanel x:Name="TargetsPanel" />
+
+            <CheckBox x:Name="ShiftBox" Margin="0,10,0,0" Content="{DynamicResource Add.ShiftOnly}" />
+
+            <TextBlock x:Name="ErrorText" Margin="0,12,0,0" FontSize="12" Foreground="#F85149" TextWrapping="Wrap" Visibility="Collapsed" />
+
+            <StackPanel Margin="0,20,0,0" Orientation="Horizontal" HorizontalAlignment="Right">
+                <ui:Button Content="{DynamicResource Btn.Cancel}" IsCancel="True" Click="Cancel_Click" />
+                <ui:Button Margin="8,0,0,0" Appearance="Primary" Content="{DynamicResource Add.Create}" IsDefault="True" Click="Create_Click">
+                    <ui:Button.Icon>
+                        <ui:SymbolIcon Symbol="Add24" />
+                    </ui:Button.Icon>
+                </ui:Button>
+            </StackPanel>
+        </StackPanel>
+    </StackPanel>
+</ui:FluentWindow>
