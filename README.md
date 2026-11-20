@@ -6,6 +6,31 @@
 <p align="center"><b>by PiloTDredd</b></p>
 <p align="center">Настрой правый клик Windows под себя · Make Windows right-click yours</p>
 
+<p align="center">
+<a href="https://github.com/PiloTDredd/DreddMenu/releases/latest"><img src="https://img.shields.io/github/v/release/PiloTDredd/DreddMenu?style=flat-square&label=version&color=7c3aed" alt="Version"></a>
+<a href="https://github.com/PiloTDredd/DreddMenu/releases"><img src="https://img.shields.io/github/downloads/PiloTDredd/DreddMenu/total?style=flat-square&label=downloads&color=16a34a" alt="Downloads"></a>
+<img src="https://img.shields.io/badge/Windows-10%20%7C%2011-0078d4?style=flat-square&logo=windows11&logoColor=white" alt="Windows 10 | 11">
+<img src="https://img.shields.io/badge/.NET-8-512bd4?style=flat-square&logo=dotnet&logoColor=white" alt=".NET 8">
+<a href="LICENSE"><img src="https://img.shields.io/github/license/PiloTDredd/DreddMenu?style=flat-square&color=64748b" alt="MIT"></a>
+</p>
+
+<p align="center">
+<a href="https://github.com/PiloTDredd/DreddMenu/releases/latest"><b>⬇️ Скачать · Download</b></a>
+</p>
+
+<p align="center"><img src="docs/desktop-dark.png" width="820" alt="Dredd Menu — меню рабочего стола с предпросмотром"></p>
+
+<table>
+<tr>
+<td width="50%"><img src="docs/types-dark.png" alt="Типы файлов"><p align="center"><sub>Пункты для отдельных типов файлов · Per file type</sub></p></td>
+<td width="50%"><img src="docs/win11-dark.png" alt="Windows 11"><p align="center"><sub>Новое меню Windows 11 и классический режим · Windows 11 menu</sub></p></td>
+</tr>
+<tr>
+<td width="50%"><img src="docs/check-dark.png" alt="Проверка системы"><p align="center"><sub>Проверка системы и битых пунктов · Self-check</sub></p></td>
+<td width="50%"><img src="docs/settings-light.png" alt="Настройки"><p align="center"><sub>Светлая тема, экспорт и импорт · Light theme, export/import</sub></p></td>
+</tr>
+</table>
+
 ---
 
 ## 🇷🇺 Русский
